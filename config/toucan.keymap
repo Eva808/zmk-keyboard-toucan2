@@ -42,7 +42,7 @@
 
         sym {
             bindings = <
-&trans  &kp LS(POUND)  &kp LS(DQT)  &kp LBKT  &kp RBKT  &kp LS(DLLR)  &kp LS(PRCNT)  &kp HOME  &kp UP  &kp END  &kp SEMI  &trans  &trans  &kp LS(AT)  &trans  &trans  &trans  &kp FSLH  &kp LS(STAR)  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(COLON)  &trans  &to 0  &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(LBRC)  &kp LS(RBRC)  &kp BSLH  &kp LS(CARET)  &kp LS(AMPS)  &trans  &trans  &trans  &kp UNDERSCORE  &trans  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
+&trans  &kp LS(POUND)  &kp LS(DQT)  &kp LBKT  &kp RBKT  &kp LS(DLLR)  &kp LS(PRCNT)  &kp HOME  &kp UP  &kp END  &kp SEMI  &trans  &trans  &kp LS(AT)  &mt LA(SQT) SQT  &mt LS(LEFT_PARENTHESIS) LEFT_PARENTHESIS  &mt LC(RIGHT_PARENTHESIS) RIGHT_PARENTHESIS  &kp FSLH  &kp LS(STAR)  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(COLON)  &trans  &to 0  &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(LBRC)  &kp LS(RBRC)  &kp BSLH  &kp LS(CARET)  &kp LS(AMPS)  &trans  &trans  &trans  &kp UNDERSCORE  &trans  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
             >;
         };
 
