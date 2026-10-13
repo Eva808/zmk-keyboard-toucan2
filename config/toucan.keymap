@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/pointing.h>
 #include "keys_ru.h"
 #include "keys_uk.h"
+#include "keys_de.h"
 
 #define BASE 0
 #define NAV  1
