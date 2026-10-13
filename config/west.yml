@@ -8,6 +8,7 @@ manifest:
       url-base: https://github.com/geeksville
     - name: beekeeb
       url-base: https://github.com/beekeeb
+      url-base: https://github.com/joelspadin/zmk-locale-generator.git
   projects:
     - name: zmk
       remote: zmkfirmware
