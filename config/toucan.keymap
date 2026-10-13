@@ -14,21 +14,33 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <2 2>;
-            then-layer = <2>;
+            if-layers = <4 4>;
+            then-layer = <4>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        base {
+        eng {
             bindings = <
-&kp ESC  &kp W  &kp L  &kp Y  &kp P  &kp B  &kp Z  &kp F  &kp O  &kp U  &kp DEL  &kp BSPC  &kp TAB  &mt LG(C) C  &mt LA(R) R  &mt LS(S) S  &mt LC(T) T  &kp G  &kp M  &mt RC(N) N  &mt RS(E) E  &mt RA(I) I  &mt RG(A) A  &kp EQUAL  &sl 3  &kp Q  &kp J  &kp V  &kp D  &kp K  &kp X  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &kp BSPC  &trans  &lt 0 SPACE  &kp ENTER  &kp ENTER  &kp SPACE  &trans
+&kp ESC  &kp W  &kp L  &kp Y  &kp P  &kp B  &kp Z  &kp F  &kp O  &kp U  &kp DEL  &kp BSPC  &kp TAB  &mt LG(C) C  &mt LA(R) R  &mt LS(S) S  &mt LC(T) T  &kp G  &kp M  &mt RC(N) N  &mt RS(E) E  &mt RA(I) I  &mt RG(A) A  &kp EQUAL  &sl 5  &kp Q  &kp J  &kp V  &kp D  &kp K  &kp X  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &kp BSPC  &tog 3  &lt 0 SPACE  &kp ENTER  &kp ENTER  &kp SPACE  &tog 2
+            >;
+        };
+
+        ru {
+            bindings = <
+&kp ESC  &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE  &kp RU_CYRILLIC_U  &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE  &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_HA  &kp TAB  &mt LG(RU_CYRILLIC_EF) RU_CYRILLIC_EF  &mt LA(RU_CYRILLIC_YERU) RU_CYRILLIC_YERU  &mt LS(RU_CYRILLIC_VE) RU_CYRILLIC_VE  &mt LC(RU_CYRILLIC_A) RU_CYRILLIC_A  &kp RU_CYRILLIC_PE  &kp RU_CYRILLIC_ER  &mt RC(RU_CYRILLIC_O) RU_CYRILLIC_O  &mt RS(RU_CYRILLIC_EL) RU_CYRILLIC_EL  &mt RA(RU_CYRILLIC_DE) RU_CYRILLIC_DE  &mt RG(RU_CYRILLIC_ZHE) RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E  &sl 5  &kp RU_CYRILLIC_YA  &kp RU_CYRILLIC_CHE  &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE  &kp RU_CYRILLIC_YU  &kp RU_COMMA  &kp RU_DOT  &tog 3  &lt 3 RU_SPACE  &kp ENTER  &kp ENTER  &lt 2 RU_SPACE  &tog 2
             >;
         };
 
         sym {
+            bindings = <
+&trans  &kt S  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        num {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
