@@ -42,6 +42,32 @@
 
             label = "TO_UKR";
         };
+
+        PASS: PASS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LC(LA(Z))>, <&macro_release>;
+
+            label = "PASS";
+        };
+    };
+
+    behaviors {
+        UKR_YI: UKR_YI {
+            compatible = "zmk,behavior-tap-dance";
+            label = "UKR_YI";
+            #binding-cells = <0>;
+            bindings =
+                <&mt LA(UK_UKRAINIAN_I) UK_UKRAINIAN_I>,
+                <&kp UK_CYRILLIC_YI>;
+        };
+
+        UKR_G: UKR_G {
+            compatible = "zmk,behavior-tap-dance";
+            label = "UKR_G";
+            #binding-cells = <0>;
+            bindings = <&kp LS(UK_CYRILLIC_GHE)>, <&kp UK_CYRILLIC_GHE_UPTURN>;
+        };
     };
 
     keymap {
@@ -61,7 +87,7 @@
 
         ukr {
             bindings = <
-&kp ESC  &kp LS(UK_CYRILLIC_SHORT_I)  &kp UK_CYRILLIC_TSE  &kp UK_CYRILLIC_U  &kp UK_CYRILLIC_KA  &kp UK_CYRILLIC_IE  &kp UK_CYRILLIC_EN  &kp UK_CYRILLIC_GHE  &kp UK_CYRILLIC_SHA  &kp UK_CYRILLIC_SHCHA  &kp UK_CYRILLIC_ZE  &kp UK_CYRILLIC_HA  &kp TAB  &mt LG(UK_CYRILLIC_EF) UK_CYRILLIC_EF  &mt LA(UK_UKRAINIAN_I) UK_UKRAINIAN_I  &mt LS(UK_CYRILLIC_VE) UK_CYRILLIC_VE  &mt LC(UK_CYRILLIC_A) UK_CYRILLIC_A  &kp UK_CYRILLIC_PE  &kp UK_CYRILLIC_ER  &mt RC(UK_CYRILLIC_O) UK_CYRILLIC_O  &mt RS(UK_CYRILLIC_EL) UK_CYRILLIC_EL  &mt RA(UK_CYRILLIC_DE) UK_CYRILLIC_DE  &mt RG(UK_CYRILLIC_ZHE) UK_CYRILLIC_ZHE  &kp LS(UK_UKRAINIAN_IE)  &sl 5  &kp UK_CYRILLIC_YA  &kp UK_CYRILLIC_CHE  &kp UK_CYRILLIC_ES  &kp UK_CYRILLIC_EM  &kp UK_CYRILLIC_I  &kp UK_CYRILLIC_TE  &kp UK_CYRILLIC_SOFT_SIGN  &kp UK_CYRILLIC_BE  &kp UK_CYRILLIC_YU  &kp UK_COMMA  &kp UK_DOT  &tog 4  &lt 4 UK_SPACE  &kp ENTER  &kp ENTER  &lt 3 UK_SPACE  &tog 3
+&kp ESC  &kp LS(UK_CYRILLIC_SHORT_I)  &kp UK_CYRILLIC_TSE  &kp UK_CYRILLIC_U  &kp UK_CYRILLIC_KA  &kp UK_CYRILLIC_IE  &kp UK_CYRILLIC_EN  &UKR_G  &kp UK_CYRILLIC_SHA  &kp UK_CYRILLIC_SHCHA  &kp UK_CYRILLIC_ZE  &kp UK_CYRILLIC_HA  &kp TAB  &mt LG(UK_CYRILLIC_EF) UK_CYRILLIC_EF  &UKR_YI  &mt LS(UK_CYRILLIC_VE) UK_CYRILLIC_VE  &mt LC(UK_CYRILLIC_A) UK_CYRILLIC_A  &kp UK_CYRILLIC_PE  &kp UK_CYRILLIC_ER  &mt RC(UK_CYRILLIC_O) UK_CYRILLIC_O  &mt RS(UK_CYRILLIC_EL) UK_CYRILLIC_EL  &mt RA(UK_CYRILLIC_DE) UK_CYRILLIC_DE  &mt RG(UK_CYRILLIC_ZHE) UK_CYRILLIC_ZHE  &kp LS(UK_UKRAINIAN_IE)  &sl 5  &kp UK_CYRILLIC_YA  &kp UK_CYRILLIC_CHE  &kp UK_CYRILLIC_ES  &kp UK_CYRILLIC_EM  &kp UK_CYRILLIC_I  &kp UK_CYRILLIC_TE  &kp UK_CYRILLIC_SOFT_SIGN  &kp UK_CYRILLIC_BE  &kp UK_CYRILLIC_YU  &kp UK_COMMA  &kp UK_DOT  &tog 4  &lt 4 UK_SPACE  &kp ENTER  &kp ENTER  &lt 3 UK_SPACE  &tog 3
             >;
         };
 
