@@ -46,45 +46,6 @@
             label = "TO_UKR";
         };
 
-Now selecting a language updates both your OS language and your ZMK alpha layer. ZMK macros can sequence layer behaviors alongside key presses. 
-ZMK Firmware
-+1
-2. Make the number layer return to the underlying alpha layer
-
-You can avoid custom C code entirely if you treat the number layer as a toggleable overlay.
-
-In each alpha layer, replace the number-layer activation binding &toggle_on 6 with:
-dts
-
-&tog 6
-
-Then, on your num layer, replace:
-dts
-
-&to 0
-
-with:
-dts
-
-&tog 6
-
-Why this works: &tog 6 turns the number layer on while leaving the selected alpha layer underneath it. Pressing &tog 6 again disables the number layer, revealing whichever alpha layer is currently active. This is standard ZMK layer-toggle behavior. 
-ZMK Firmware
-+1
-One important detail
-
-Use &tog 6 for entering and exiting the number layer, but keep your symbol-layer return keys as they are:
-
-    sym → &to 0
-
-    sym_ru → &to 1
-
-    sym_uk → &to 2
-
-Those symbol layers intentionally return to a specific language.
-
-This approach should give you the behavior you want without maintaining a separate remembered-language variable. It also means your language macros can take you directly to the selected alpha layer from the function layer.
-
 
         PASS: PASS {
             compatible = "zmk,behavior-macro";
