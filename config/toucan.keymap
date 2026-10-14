@@ -56,56 +56,56 @@
         COPY_: COPY_ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LC(C)>;
             label = "COPY_";
         };
 
         PASTE: PASTE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LC(V)>;
             label = "PASTE";
         };
 
         CUT_: CUT_ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LC(X)>;
             label = "CUT_";
         };
 
         SELECT_ALL: SELECT_ALL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LC(A)>;
             label = "SELECT_ALL";
         };
 
         SAVE: SAVE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LC(S)>;
             label = "SAVE";
         };
 
         UNDO_: UNDO_ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LC(Z)>;
             label = "UNDO_";
         };
 
         REDO: REDO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LC(Y)>;
             label = "REDO";
         };
 
         FIND: FIND {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LC(F)>;
             label = "FIND";
         };
     };
