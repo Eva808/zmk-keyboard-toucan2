@@ -290,7 +290,7 @@
 
         num {
             bindings = <
-&trans  &none  &kp HOME  &kp UP  &kp END  &none  &kp DOT  &kp N7  &kp N8  &kp N9  &kp EQUAL  &trans  &trans  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &kp COMMA  &mt RC(N4) N4  &mt RS(N5) NUMBER_5  &mt RA(N6) NUMBER_6  &kp FSLH  &kp MINUS  &toggle_off 0  &none  &kp LBKT  &none  &kp RBKT  &none  &kp N0  &kp N1  &kp N2  &kp N3  &kp STAR  &kp PLUS  &trans  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
+&trans  &none  &kp HOME  &kp UP  &kp END  &none  &kp DOT  &kp N7  &kp N8  &kp N9  &kp EQUAL  &trans  &trans  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &kp COMMA  &mt RC(N4) N4  &mt RS(N5) NUMBER_5  &mt RA(N6) NUMBER_6  &kp FSLH  &kp MINUS  &toggle_off 6  &none  &kp LBKT  &none  &kp RBKT  &none  &kp N0  &kp N1  &kp N2  &kp N3  &kp STAR  &kp PLUS  &trans  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
             >;
         };
 
