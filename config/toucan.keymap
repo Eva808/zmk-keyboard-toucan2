@@ -18,6 +18,32 @@
         };
     };
 
+    macros {
+        TO_ENG: TO_ENG {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LA(LS(NUMBER_1))>, <&macro_release>;
+
+            label = "TO_ENG";
+        };
+
+        TO_RU: TO_RU {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LA(LS(NUMBER_2))>, <&macro_release>;
+
+            label = "TO_RU";
+        };
+
+        TO_UKR: TO_UKR {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LA(LS(N3))>, <&macro_release>;
+
+            label = "TO_UKR";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -53,7 +79,7 @@
 
         fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &none  &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &none  &none  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &none  &tog 0  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &trans  &trans  &none
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &none  &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &none  &none  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &none  &tog 0  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &TO_UKR  &TO_ENG  &TO_RU  &trans  &trans  &none
             >;
         };
     };
