@@ -52,6 +52,62 @@
 
             label = "CLIPBOARD";
         };
+
+        COPY_: COPY_ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "COPY_";
+        };
+
+        PASTE: PASTE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "PASTE";
+        };
+
+        CUT_: CUT_ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "CUT_";
+        };
+
+        SELECT_ALL: SELECT_ALL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "SELECT_ALL";
+        };
+
+        SAVE: SAVE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "SAVE";
+        };
+
+        UNDO_: UNDO_ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "UNDO_";
+        };
+
+        REDO: REDO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "REDO";
+        };
+
+        FIND: FIND {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "FIND";
+        };
     };
 
     behaviors {
@@ -97,32 +153,80 @@
     combos {
         compatible = "zmk,combos";
 
-        cyrillic_bspc {
+        combo_cyrillic_bspc {
             bindings = <&kp BSPC>;
             key-positions = <10 11>;
             layers = <1 2>;
         };
 
-        caps {
+        combo_caps {
             bindings = <&caps_word>;
             key-positions = <15 20>;
             layers = <0 2 1>;
         };
 
-        password {
+        combo_password {
             bindings = <&PASS>;
             key-positions = <3 2>;
         };
 
-        clipboard {
+        combo_clipboard {
             bindings = <&CLIPBOARD>;
             key-positions = <1 2>;
         };
 
-        pipe {
+        combo_pipe {
             bindings = <&kp PIPE>;
             key-positions = <29 17>;
             layers = <3>;
+        };
+
+        combo_copy {
+            bindings = <&kp K_COPY>;
+            key-positions = <16 15>;
+            layers = <0 2 1>;
+        };
+
+        combo_paste {
+            bindings = <&PASTE>;
+            key-positions = <16 27>;
+            layers = <0 2 1>;
+        };
+
+        combo_cut {
+            bindings = <&kp K_CUT>;
+            key-positions = <16 14>;
+            layers = <0 1 2>;
+        };
+
+        combo_select_all {
+            bindings = <&SELECT_ALL>;
+            key-positions = <16 13>;
+            layers = <0 2 1>;
+        };
+
+        combo_save {
+            bindings = <&SAVE>;
+            key-positions = <16 3>;
+            layers = <0 1 2>;
+        };
+
+        combo_find {
+            bindings = <&FIND>;
+            key-positions = <16 2>;
+            layers = <0 1 2>;
+        };
+
+        combo_undo {
+            bindings = <&kp K_UNDO>;
+            key-positions = <16 25>;
+            layers = <0 1 2>;
+        };
+
+        combo_redo {
+            bindings = <&REDO>;
+            key-positions = <16 5>;
+            layers = <0 1 2>;
         };
     };
 
@@ -131,7 +235,7 @@
 
         eng {
             bindings = <
-&kp ESC  &kp W  &kp L  &kp Y  &kp P  &kp B  &kp Z  &kp F  &kp O  &kp U  &kp DEL  &kp BSPC  &kp TAB  &mt LG(C) C  &mt LA(R) R  &mt LS(S) S  &mt LC(T) T  &kp G  &kp M  &mt RC(N) N  &mt RS(E) E  &mt RA(I) I  &mt RG(A) A  &kp EQUAL  &to_fn 7 7  &kp Q  &kp J  &kp V  &kp D  &kp K  &kp X  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &none  &toggle_on 6  &lt 0 SPACE  &kp ENTER  &kp ENTER  &kp SPACE  &toggle_on 3
+&kp ESC  &kp W  &kp L  &kp Y  &kp P  &kp B  &kp Z  &kp F  &kp O  &kp U  &kp DEL  &kp BSPC  &kp TAB  &mt LG(C) C  &mt LA(R) R  &mt LS(S) S  &mt LC(T) T  &kp G  &kp M  &mt RC(N) N  &mt RS(E) E  &mt RA(I) I  &mt RG(A) A  &kp SQT  &to_fn 7 7  &kp Q  &kp J  &kp V  &kp D  &kp K  &kp X  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &none  &toggle_on 6  &lt 0 SPACE  &kp ENTER  &kp ENTER  &kp SPACE  &toggle_on 3
             >;
         };
 
@@ -173,7 +277,7 @@
 
         fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &none  &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &none  &none  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &none  &tog 0  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &TO_UKR  &TO_ENG  &TO_RU  &trans  &trans  &none
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &none  &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &none  &none  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &none  &tog 0  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &TO_UKR  &TO_ENG  &TO_RU  &trans  &trans  &kp OUT
             >;
         };
 
