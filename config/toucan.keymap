@@ -9,14 +9,7 @@
 #define ADJ  3
 
 / {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        tri_layer {
-            if-layers = <5 5>;
-            then-layer = <5>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     macros {
         TO_ENG: TO_ENG {
@@ -50,6 +43,14 @@
 
             label = "PASS";
         };
+
+        CLIPBOARD: clipboard {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LG(V)>;
+
+            label = "CLIPBOARD";
+        };
     };
 
     behaviors {
@@ -74,6 +75,38 @@
             label = "RUS_SOFT_HARD";
             #binding-cells = <0>;
             bindings = <&kp RU_CYRILLIC_SOFT_SIGN>, <&kp RU_CYRILLIC_HARD_SIGN>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        cyrillic_bspc {
+            bindings = <&kp BSPC>;
+            key-positions = <10 11>;
+            layers = <1 2>;
+        };
+
+        caps {
+            bindings = <&caps_word>;
+            key-positions = <15 20>;
+            layers = <0 2 1>;
+        };
+
+        password {
+            bindings = <&PASS>;
+            key-positions = <3 2>;
+        };
+
+        clipboard {
+            bindings = <&CLIPBOARD>;
+            key-positions = <1 2>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <29 17>;
+            layers = <3>;
         };
     };
 
