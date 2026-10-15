@@ -254,7 +254,7 @@
 
         eng {
             bindings = <
-&kp ESC  &kp W  &kp L  &kp Y  &kp P  &kp B  &kp Z  &kp F  &kp O  &kp U  &kp DEL  &kp BSPC  &kp TAB  &mt LG(C) C  &mt LA(R) R  &mt LS(S) S  &mt LC(T) T  &kp G  &kp M  &mt RC(N) N  &mt RS(E) E  &mt RA(I) I  &mt RG(A) A  &kp SQT  &to_fn 8 8  &kp Q  &kp J  &kp V  &kp D  &kp K  &kp X  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &none  &toggle_on 7  &lt 0 SPACE  &kp ENTER  &kp ENTER  &kp SPACE  &toggle_on 3
+&kp ESC  &kp W  &kp L  &kp Y  &kp P  &kp B  &kp Z  &kp F  &kp O  &kp U  &kp DEL  &kp BSPC  &kp TAB  &mt LG(C) C  &mt LA(R) R  &mt LS(S) S  &mt LC(T) T  &kp G  &kp M  &mt RC(N) N  &mt RS(E) E  &mt RA(I) I  &mt RG(A) A  &kp SQT  &none  &kp Q  &kp J  &kp V  &kp D  &kp K  &kp X  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &to_fn 8 8  &toggle_on 7  &lt 0 SPACE  &kp ENTER  &kp ENTER  &kp SPACE  &toggle_on 3
             >;
         };
 
