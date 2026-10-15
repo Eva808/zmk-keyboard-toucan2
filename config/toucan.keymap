@@ -296,13 +296,13 @@
 
         num {
             bindings = <
-&trans  &none  &kp HOME  &kp UP  &kp END  &none  &kp DOT  &kp N7  &kp N8  &kp N9  &kp EQUAL  &trans  &trans  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &kp COMMA  &mt RC(N4) N4  &mt RS(N5) NUMBER_5  &mt RA(N6) NUMBER_6  &kp FSLH  &kp MINUS  &toggle_off 7  &none  &kp LBKT  &none  &kp RBKT  &none  &kp N0  &kp N1  &kp N2  &kp N3  &kp STAR  &kp PLUS  &trans  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
+&trans  &none  &kp HOME  &kp UP  &kp END  &none  &kp DOT  &kp N7  &kp N8  &kp N9  &kp EQUAL  &trans  &trans  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &kp COMMA  &mt RC(N4) N4  &mt RS(N5) NUMBER_5  &mt RA(N6) NUMBER_6  &kp FSLH  &kp MINUS  &toggle_off 8  &none  &kp LBKT  &none  &kp RBKT  &none  &kp N0  &kp N1  &kp N2  &kp N3  &kp STAR  &kp PLUS  &trans  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
             >;
         };
 
         fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &none  &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &none  &none  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &none  &toggle_off 8  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &TO_UKR  &TO_ENG  &TO_RU  &trans  &trans  &kp OUT
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &none  &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &none  &none  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &none  &toggle_off 9  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &TO_UKR  &TO_ENG  &TO_RU  &trans  &trans  &kp OUT
             >;
         };
     };
