@@ -17,7 +17,7 @@
     default_layout: default_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
-        transform = <&default_transform>;
+        transform = <&default>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0   37       0     0     0>
@@ -66,7 +66,7 @@
     };
 
 
-    default_transform: keymap_transform {
+    default: keymap_transform {
         compatible = "zmk,matrix-transform";
         columns = <12>;
         rows = <4>;
