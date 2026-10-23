@@ -1,12 +1,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <toucan.dtsi>
 
-
 / {
     chosen {
-    zmk,kscan = &mock_kscan;
-    zmk,physical-layout = &default_layout;
-};
+        zmk,kscan = &mock_kscan;
+    };
 
     mock_kscan: mock_kscan_0 {
         compatible = "zmk,kscan-mock";
@@ -14,7 +12,4 @@
         rows = <0>;
         events = <0>;
     };
-
-   
-
 };
