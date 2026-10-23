@@ -254,55 +254,55 @@
 
         eng {
             bindings = <
-&kp ESC  &kp W  &kp L  &kp Y  &kp P  &kp B  &kp Z  &kp F  &kp O  &kp U  &kp DEL  &kp BSPC  &kp TAB  &mt LG(C) C  &mt LA(R) R  &mt LS(S) S  &mt LC(T) T  &kp G  &kp M  &mt RC(N) N  &mt RS(E) E  &mt RA(I) I  &mt RG(A) A  &kp SQT  &to_fn 7 7  &kp Q  &kp J  &kp V  &kp D  &kp K  &kp X  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &none  &toggle_on 6  &lt 0 SPACE  &kp ENTER  &kp ENTER  &kp SPACE  &toggle_on 3
+&kp ESC  &kp W  &kp L  &kp Y  &kp P  &kp B  &kp Z  &kp F  &kp O  &kp U  &kp DEL  &kp BSPC  &kp TAB  &mt LG(C) C  &mt LA(R) R  &mt LS(S) S  &mt LC(T) T  &kp G  &kp M  &mt RC(N) N  &mt RS(E) E  &mt RA(I) I  &mt RG(A) A  &kp SQT  &to_fn 8 8  &kp Q  &kp J  &kp V  &kp D  &kp K  &kp X  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &none  &toggle_on 7  &lt 7 SPACE  &kp ENTER  &kp ENTER  &lt 3 SPACE  &toggle_on 3
             >;
         };
 
         ru {
             bindings = <
-&kp ESC  &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE  &kp RU_CYRILLIC_U  &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE  &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_HA  &kp TAB  &mt LG(RU_CYRILLIC_EF) RU_CYRILLIC_EF  &mt LA(RU_CYRILLIC_YERU) RU_CYRILLIC_YERU  &mt LS(RU_CYRILLIC_VE) RU_CYRILLIC_VE  &mt LC(RU_CYRILLIC_A) RU_CYRILLIC_A  &kp RU_CYRILLIC_PE  &kp RU_CYRILLIC_ER  &mt RC(RU_CYRILLIC_O) RU_CYRILLIC_O  &mt RS(RU_CYRILLIC_EL) RU_CYRILLIC_EL  &mt RA(RU_CYRILLIC_DE) RU_CYRILLIC_DE  &mt RG(RU_CYRILLIC_ZHE) RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E  &to_fn 7 7  &kp RU_CYRILLIC_YA  &kp RU_CYRILLIC_CHE  &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I  &kp RU_CYRILLIC_TE  &RUS_SOFT_HARD  &kp RU_CYRILLIC_BE  &kp RU_CYRILLIC_YU  &kp RU_COMMA  &kp RU_DOT  &toggle_on 6  &lt 6 RU_SPACE  &kp ENTER  &kp ENTER  &lt 3 RU_SPACE  &toggle_on 4
+&kp ESC  &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE  &kp RU_CYRILLIC_U  &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE  &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_HA  &kp TAB  &mt LG(RU_CYRILLIC_EF) RU_CYRILLIC_EF  &mt LA(RU_CYRILLIC_YERU) RU_CYRILLIC_YERU  &mt LS(RU_CYRILLIC_VE) RU_CYRILLIC_VE  &mt LC(RU_CYRILLIC_A) RU_CYRILLIC_A  &kp RU_CYRILLIC_PE  &kp RU_CYRILLIC_ER  &mt RC(RU_CYRILLIC_O) RU_CYRILLIC_O  &mt RS(RU_CYRILLIC_EL) RU_CYRILLIC_EL  &mt RA(RU_CYRILLIC_DE) RU_CYRILLIC_DE  &mt RG(RU_CYRILLIC_ZHE) RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E  &to_fn 8 8  &kp RU_CYRILLIC_YA  &kp RU_CYRILLIC_CHE  &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I  &kp RU_CYRILLIC_TE  &RUS_SOFT_HARD  &kp RU_CYRILLIC_BE  &kp RU_CYRILLIC_YU  &kp RU_COMMA  &none  &toggle_on 7  &lt 7 RU_SPACE  &kp ENTER  &kp ENTER  &lt 5 RU_SPACE  &toggle_on 5
             >;
         };
 
         ukr {
             bindings = <
-&kp ESC  &kp LS(UK_CYRILLIC_SHORT_I)  &kp UK_CYRILLIC_TSE  &kp UK_CYRILLIC_U  &kp UK_CYRILLIC_KA  &kp UK_CYRILLIC_IE  &kp UK_CYRILLIC_EN  &UKR_H_G  &kp UK_CYRILLIC_SHA  &kp UK_CYRILLIC_SHCHA  &kp UK_CYRILLIC_ZE  &kp UK_CYRILLIC_HA  &kp TAB  &mt LG(UK_CYRILLIC_EF) UK_CYRILLIC_EF  &UKR_I_YI  &mt LS(UK_CYRILLIC_VE) UK_CYRILLIC_VE  &mt LC(UK_CYRILLIC_A) UK_CYRILLIC_A  &kp UK_CYRILLIC_PE  &kp UK_CYRILLIC_ER  &mt RC(UK_CYRILLIC_O) UK_CYRILLIC_O  &mt RS(UK_CYRILLIC_EL) UK_CYRILLIC_EL  &mt RA(UK_CYRILLIC_DE) UK_CYRILLIC_DE  &mt RG(UK_CYRILLIC_ZHE) UK_CYRILLIC_ZHE  &kp LS(UK_UKRAINIAN_IE)  &to_fn 7 7  &kp UK_CYRILLIC_YA  &kp UK_CYRILLIC_CHE  &kp UK_CYRILLIC_ES  &kp UK_CYRILLIC_EM  &kp UK_CYRILLIC_I  &kp UK_CYRILLIC_TE  &kp UK_CYRILLIC_SOFT_SIGN  &kp UK_CYRILLIC_BE  &kp UK_CYRILLIC_YU  &kp UK_COMMA  &kp UK_DOT  &toggle_on 6  &lt 6 UK_SPACE  &kp ENTER  &kp ENTER  &lt 3 UK_SPACE  &toggle_on 5
+&kp ESC  &kp LS(UK_CYRILLIC_SHORT_I)  &kp UK_CYRILLIC_TSE  &kp UK_CYRILLIC_U  &kp UK_CYRILLIC_KA  &kp UK_CYRILLIC_IE  &kp UK_CYRILLIC_EN  &UKR_H_G  &kp UK_CYRILLIC_SHA  &kp UK_CYRILLIC_SHCHA  &kp UK_CYRILLIC_ZE  &kp UK_CYRILLIC_HA  &kp TAB  &mt LG(UK_CYRILLIC_EF) UK_CYRILLIC_EF  &UKR_I_YI  &mt LS(UK_CYRILLIC_VE) UK_CYRILLIC_VE  &mt LC(UK_CYRILLIC_A) UK_CYRILLIC_A  &kp UK_CYRILLIC_PE  &kp UK_CYRILLIC_ER  &mt RC(UK_CYRILLIC_O) UK_CYRILLIC_O  &mt RS(UK_CYRILLIC_EL) UK_CYRILLIC_EL  &mt RA(UK_CYRILLIC_DE) UK_CYRILLIC_DE  &mt RG(UK_CYRILLIC_ZHE) UK_CYRILLIC_ZHE  &kp LS(UK_UKRAINIAN_IE)  &to_fn 8 8  &kp UK_CYRILLIC_YA  &kp UK_CYRILLIC_CHE  &kp UK_CYRILLIC_ES  &kp UK_CYRILLIC_EM  &kp UK_CYRILLIC_I  &kp UK_CYRILLIC_TE  &kp UK_CYRILLIC_SOFT_SIGN  &kp UK_CYRILLIC_BE  &kp UK_CYRILLIC_YU  &kp UK_COMMA  &none  &toggle_on 7  &lt 7 UK_SPACE  &kp ENTER  &kp ENTER  &lt 6 UK_SPACE  &toggle_on 6
             >;
         };
 
         sym {
             bindings = <
-&trans  &kp LS(POUND)  &kp LS(DQT)  &kp LBKT  &kp RBKT  &kp LS(DLLR)  &kp LS(PRCNT)  &kp HOME  &kp UP  &kp END  &kp SEMI  &trans  &trans  &kp LS(AT)  &mt LA(SQT) SQT  &mt LS(LEFT_PARENTHESIS) LEFT_PARENTHESIS  &mt LC(RIGHT_PARENTHESIS) RIGHT_PARENTHESIS  &kp FSLH  &kp LS(STAR)  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(COLON)  &trans  &to 0  &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(LBRC)  &kp LS(RBRC)  &kp BSLH  &kp LS(CARET)  &kp LS(AMPS)  &trans  &trans  &trans  &kp UNDERSCORE  &none  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
-            >;
-        };
-
-        sym_ru {
-            bindings = <
-&trans  &kp LS(POUND)  &kp LS(DQT)  &kp LBKT  &kp RBKT  &kp LS(DLLR)  &kp LS(PRCNT)  &kp HOME  &kp UP  &kp END  &kp SEMI  &trans  &trans  &kp LS(AT)  &mt LA(SQT) SQT  &mt LS(LEFT_PARENTHESIS) LEFT_PARENTHESIS  &mt LC(RIGHT_PARENTHESIS) RIGHT_PARENTHESIS  &kp FSLH  &kp LS(STAR)  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(COLON)  &trans  &to 1  &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(LBRC)  &kp LS(RBRC)  &kp BSLH  &kp LS(CARET)  &kp LS(AMPS)  &trans  &trans  &trans  &kp UNDERSCORE  &none  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
-            >;
-        };
-
-        sym_uk {
-            bindings = <
-&trans  &kp LS(POUND)  &kp LS(DQT)  &kp LBKT  &kp RBKT  &kp LS(DLLR)  &kp LS(PRCNT)  &kp HOME  &kp UP  &kp END  &kp SEMI  &trans  &trans  &kp LS(AT)  &mt LA(SQT) SQT  &mt LS(LEFT_PARENTHESIS) LEFT_PARENTHESIS  &mt LC(RIGHT_PARENTHESIS) RIGHT_PARENTHESIS  &kp FSLH  &kp LS(STAR)  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(COLON)  &trans  &to 2  &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(LBRC)  &kp LS(RBRC)  &kp BSLH  &kp LS(CARET)  &kp LS(AMPS)  &trans  &trans  &trans  &kp UNDERSCORE  &none  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
-            >;
-        };
-
-        num {
-            bindings = <
-&trans  &none  &kp HOME  &kp UP  &kp END  &none  &kp DOT  &kp N7  &kp N8  &kp N9  &kp EQUAL  &trans  &trans  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &kp COMMA  &mt RC(N4) N4  &mt RS(N5) NUMBER_5  &mt RA(N6) NUMBER_6  &kp FSLH  &kp MINUS  &toggle_off 6  &none  &kp LBKT  &none  &kp RBKT  &none  &kp N0  &kp N1  &kp N2  &kp N3  &kp STAR  &kp PLUS  &trans  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
-            >;
-        };
-
-        fn {
-            bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &none  &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &none  &none  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &none  &tog 0  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &TO_UKR  &TO_ENG  &TO_RU  &trans  &trans  &kp OUT
+&trans  &kp LS(POUND)  &kp LS(DQT)  &kp LBKT  &kp RBKT  &kp LS(DLLR)  &kp LS(PRCNT)  &kp HOME  &kp UP  &kp END  &kp SEMI  &trans  &trans  &kp LS(AT)  &mt LA(SQT) SQT  &mt LS(LEFT_PARENTHESIS) LEFT_PARENTHESIS  &mt LC(RIGHT_PARENTHESIS) RIGHT_PARENTHESIS  &kp FSLH  &kp LS(STAR)  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(COLON)  &trans  &none  &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(LBRC)  &kp LS(RBRC)  &kp BSLH  &kp LS(CARET)  &kp LS(AMPS)  &trans  &trans  &trans  &toggle_off 3  &none  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
             >;
         };
 
         MOUSE {
             bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp LCLK  &mkp MCLK  &mkp RCLK
+            >;
+        };
+
+        sym_ru {
+            bindings = <
+&trans  &kp LS(POUND)  &kp LS(DQT)  &kp LBKT  &kp RBKT  &kp LS(DLLR)  &kp LS(PRCNT)  &kp HOME  &kp UP  &kp END  &kp SEMI  &trans  &trans  &kp LS(AT)  &mt LA(SQT) SQT  &mt LS(LEFT_PARENTHESIS) LEFT_PARENTHESIS  &mt LC(RIGHT_PARENTHESIS) RIGHT_PARENTHESIS  &kp FSLH  &kp LS(STAR)  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(COLON)  &trans  &none  &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(LBRC)  &kp LS(RBRC)  &kp BSLH  &kp LS(CARET)  &kp LS(AMPS)  &kp RU_COMMA  &kp RU_DOT  &kp RU_MINUS  &toggle_off 5  &none  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
+            >;
+        };
+
+        sym_uk {
+            bindings = <
+&trans  &kp LS(POUND)  &kp LS(DQT)  &kp LBKT  &kp RBKT  &kp LS(DLLR)  &kp LS(PRCNT)  &kp HOME  &kp UP  &kp END  &kp SEMI  &trans  &trans  &kp LS(AT)  &mt LA(SQT) SQT  &mt LS(LEFT_PARENTHESIS) LEFT_PARENTHESIS  &mt LC(RIGHT_PARENTHESIS) RIGHT_PARENTHESIS  &kp FSLH  &kp LS(STAR)  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(COLON)  &trans  &none  &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(LBRC)  &kp LS(RBRC)  &kp BSLH  &kp LS(CARET)  &kp LS(AMPS)  &kp UK_COMMA  &kp UK_DOT  &kp UK_MINUS  &toggle_off 6  &none  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
+            >;
+        };
+
+        num {
+            bindings = <
+&trans  &none  &kp HOME  &kp UP  &kp END  &none  &kp DOT  &kp N7  &kp N8  &kp N9  &kp EQUAL  &trans  &trans  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &kp COMMA  &mt RC(N4) N4  &mt RS(N5) NUMBER_5  &mt RA(N6) NUMBER_6  &kp FSLH  &kp MINUS  &toggle_off 8  &none  &kp LBKT  &none  &kp RBKT  &none  &kp N0  &kp N1  &kp N2  &kp N3  &kp STAR  &kp PLUS  &trans  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
+            >;
+        };
+
+        fn {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &none  &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &none  &none  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &none  &toggle_off 9  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &TO_UKR  &TO_ENG  &TO_RU  &trans  &trans  &kp OUT
             >;
         };
     };
