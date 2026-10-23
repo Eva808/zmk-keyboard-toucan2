@@ -152,14 +152,13 @@
             #binding-cells = <1>;
         };
 
-        to_fn: to_fn {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TO_FN";
-            bindings = <&mo>, <&sl>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
+to_fn: to_fn {
+    compatible = "zmk,behavior-hold-tap";
+    label = "TO_FN";
+    #binding-cells = <2>;
+    bindings = <&mo 0>, <&sl 0>;
+    tapping-term-ms = <200>;
+};
 
         toggle_off: toggle_off {
             compatible = "zmk,behavior-toggle-layer";
