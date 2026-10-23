@@ -4,10 +4,15 @@
 #include "keys_ru.h"
 #include "keys_uk.h"
 
-#define BASE 0
-#define NAV  1
-#define SYM  2
-#define ADJ  3
+#define ENG 0
+#define RU 1
+#define UKR 2
+#define SYM 3
+#define MOUSE 4
+#define SYM_RU 5
+#define SYM_UK 6
+#define NUM 7
+#define FN 8
 
 / {
     conditional_layers { compatible = "zmk,conditional-layers"; };
