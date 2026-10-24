@@ -3,6 +3,19 @@ toucan.keymap: changed RC to RCTRL because toucan firmware has some macros for R
 
 
 
+include:
+  - board: seeeduino_xiao_ble
+    shield: toucan_left rgbled_adapter nice_view_gem
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: seeeduino_xiao_ble
+    shield: toucan_right rgbled_adapter
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
+
+
+
 if SHIELD_TOUCAN_DONGLE
 
 # Max 16 characters in keyboard name
