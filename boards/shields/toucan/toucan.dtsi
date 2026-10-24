@@ -138,7 +138,6 @@
         trackpad_split: trackpad_split@0 {
             compatible = "zmk,input-split";
             reg = <0>;
-            input = <&tps43_trackpad>;
         };
     };
 
