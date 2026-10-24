@@ -81,6 +81,6 @@
 };
 
 &trackpad_split {
-    input = <&tps43_trackpad>
-    
+    input = <&tps43_trackpad>;
+
 };
