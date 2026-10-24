@@ -1,8 +1,5 @@
 
 
-endif
-
-
 if SHIELD_TOUCAN_LEFT || SHIELD_TOUCAN_RIGHT
 
 config SPI
