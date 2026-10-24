@@ -14,9 +14,8 @@
         rows = <0>;
         events = <>;
     };
-};
 
-
+    
     default_layout: default_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
@@ -68,6 +67,7 @@
             ;
     };
 };
+
 
 /* Disable the inherited physical keyboard scanner. */
 &kscan0 {
