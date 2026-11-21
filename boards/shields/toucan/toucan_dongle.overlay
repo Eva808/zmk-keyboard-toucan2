@@ -1,8 +1,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "toucan.dtsi"
 
 / {
     chosen {
         zmk,kscan = &mock_kscan;
+        zmk,physical-layout = &default_layout;
     };
 
     mock_kscan: mock_kscan_0 {
