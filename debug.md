@@ -41,3 +41,9 @@ shield
 
 config SHIELD_TOUCAN_DONGLE
     def_bool $(shields_list_contains,toucan_dongle)
+
+
+build 
+
+  - board: seeeduino_xiao_ble
+    shield: toucan_dongle
