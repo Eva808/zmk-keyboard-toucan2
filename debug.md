@@ -6,6 +6,8 @@ correction: changed right modifiers to left, compiled
 
 
 
+deconfig 
+
 if SHIELD_TOUCAN_DONGLE
 
 # Max 16 characters in keyboard name
@@ -32,3 +34,10 @@ config BT_MAX_PAIRED
     default 7
 
 endif
+
+
+
+shield
+
+config SHIELD_TOUCAN_DONGLE
+    def_bool $(shields_list_contains,toucan_dongle)
