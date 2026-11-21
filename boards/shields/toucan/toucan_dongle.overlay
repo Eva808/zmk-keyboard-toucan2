@@ -129,6 +129,10 @@ input_processors {
         };
     };
 
+    &trackpad_split {
+    device = <&tps43_trackpad>;
+};
+
     trackpad_listener: trackpad_listener {
         compatible = "zmk,input-listener";
         status = "okay";
