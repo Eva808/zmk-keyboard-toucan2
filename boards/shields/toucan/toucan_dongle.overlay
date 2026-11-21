@@ -82,37 +82,66 @@
     };
 
 
+input_processors {
+        zip_zoom_mapper: zip_zoom_mapper {
+            compatible = "zmk,input-processor-zoom";
+            #input-processor-cells = <0>;
+            event-code = <INPUT_REL_MISC>;
+            sensitivity = <10>;
+#ifdef TOUCAN_WIN_MODE
+            bindings = <&kp LC(MINUS)>, <&kp LC(EQUAL)>;
+#else
+            bindings = <&kp LG(MINUS)>, <&kp LG(EQUAL)>;
+#endif
+            track-remainders;
+        };
 
-    tps43_trackpad: trackpad@74 {
-        compatible = "azoteq,tps43";
-        reg = <0x74>;
+        is_touching_processor:is_touching_processor {
+            compatible = "zmk,input-processor-behaviors";
+            #input-processor-cells = <0>;
+
+            codes = <INPUT_BTN_TOUCH>;      // watch for the 'touch' pseudo button
+            bindings  = <&mo 4>;            // Activate Layer 4 while held &mo 4
+        };
+
+        swipe_button_mapper: swipe_button_mapper {
+            compatible = "zmk,input-processor-behaviors";
+            #input-processor-cells = <0>;
+            codes = <INPUT_BTN_NORTH INPUT_BTN_EAST INPUT_BTN_SOUTH INPUT_BTN_WEST>;
+#ifdef TOUCAN_WIN_MODE
+            bindings = <&kp LG(TAB)>, <&kp LG(RIGHT)>, <&kp LG(D)>, <&kp LG(LEFT)>;
+#else
+            bindings = <&kp LC(LG(UP))>, <&kp LC(LG(RIGHT))>, <&kp LC(LG(DOWN))>, <&kp LC(LG(LEFT))>;
+#endif
+        };
+    };
+
+
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        trackpad_split: trackpad_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+            
+            device = <&tps43_trackpad>;
+        };
+    };
+
+    trackpad_listener: trackpad_listener {
+        compatible = "zmk,input-listener";
         status = "okay";
-
-        rst-gpios = <&gpio1 14 GPIO_ACTIVE_HIGH>;
-        rdy-gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>;
-
-        enable-power-management;
-        // idle-sleep; // provides maximal power savings but when ZMK is idle (i.e. you haven't used keyboard in 30secs) the touchpad will not work.  not recommended.
-        // timeout-lp1 = <3>; // 60s timeout before entering lp2 state (20 secs per unit) (default was 20s)
-        report-rate-lp2 = <640>; // 640ms report rate in LP2 state means 55uA draw rather than default 160ms 174uA draw
-        scroll-angle = <30>; // The default angle (about 47 deg) is too big on toucan2 I think
-        sensitivity = <100>;
-        scroll-sensitivity = <100>;
-
-        filter-settings=<0x0B>;
-        hold-time = <500>;
-
-        zoom;
-        scroll;
-        two-finger-tap;
-        single-tap;
-        press-and-hold;
-        //swipes;
-        three-finger-swipe;
-        three-finger-swipe-throttle-ms = <1200>;
-        switch-xy;
-        invert-scroll-y;
-
+        device = <&trackpad_split>;
+        input-processors = <&zip_xy_scaler 100 100>, <&zip_scroll_scaler 1 20>, <&zip_zoom_mapper>, <&is_touching_processor>, <&swipe_button_mapper>;
+        scroller {
+            layers = <1 2>;
+            input-processors = <
+                &zip_xy_to_scroll_mapper
+                &zip_scroll_scaler 1 20
+                &zip_scroll_transform INPUT_TRANSFORM_X_INVERT
+            >;
+        };
     };
 
 
