@@ -44,7 +44,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LC(LS(NUMBER_3))>,
+                <&kp LC(LS(NUMBER_0))>,
                 <&to 2>;
 
             label = "TO_UKR";
