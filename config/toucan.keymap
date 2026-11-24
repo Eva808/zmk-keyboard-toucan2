@@ -14,7 +14,7 @@
 #define SYM_RU 5
 #define SYM_UK 6
 #define NUM 7
-#define FN 8
+#define FN 8 
 
 / {
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -49,7 +49,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LS(N3))>,
+                <&kp LA(LS(NUMBER_3))>,
                 <&macro_release>,
                 <&to 2>;
 
