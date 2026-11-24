@@ -27,7 +27,7 @@
                 <&macro_press>,
                 <&kp LA(LS(NUMBER_1))>,
                 <&macro_release>,
-                <&to 0>;
+                <&to ENG>;
 
             label = "TO_ENG";
         };
@@ -188,7 +188,7 @@
         combo_caps {
             bindings = <&caps_word>;
             key-positions = <15 20>;
-            layers = <0 2 1>;
+            layers = <ENG 2 1>;
         };
 
         combo_password {
@@ -210,49 +210,49 @@
         combo_copy {
             bindings = <&kp K_COPY>;
             key-positions = <16 15>;
-            layers = <0 2 1>;
+            layers = <ENG 2 1>;
         };
 
         combo_paste {
             bindings = <&PASTE>;
             key-positions = <16 27>;
-            layers = <0 2 1>;
+            layers = <ENG 2 1>;
         };
 
         combo_cut {
             bindings = <&kp K_CUT>;
             key-positions = <16 14>;
-            layers = <0 1 2>;
+            layers = <ENG 1 2>;
         };
 
         combo_select_all {
             bindings = <&SELECT_ALL>;
             key-positions = <16 13>;
-            layers = <0 2 1>;
+            layers = <ENG 2 1>;
         };
 
         combo_save {
             bindings = <&SAVE>;
             key-positions = <16 3>;
-            layers = <0 1 2>;
+            layers = <ENG 1 2>;
         };
 
         combo_find {
             bindings = <&FIND>;
             key-positions = <16 2>;
-            layers = <0 1 2>;
+            layers = <ENG 1 2>;
         };
 
         combo_undo {
             bindings = <&kp K_UNDO>;
             key-positions = <16 25>;
-            layers = <0 1 2>;
+            layers = <ENG 1 2>;
         };
 
         combo_redo {
             bindings = <&REDO>;
             key-positions = <16 5>;
-            layers = <0 1 2>;
+            layers = <ENG 1 2>;
         };
     };
 
