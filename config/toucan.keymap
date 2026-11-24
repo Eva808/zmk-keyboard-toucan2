@@ -256,7 +256,7 @@
         eng {
             display-name = "ENG";
             bindings = <
-&kp ESC  &kp W  &kp L  &kp Y  &kp P  &kp B  &kp Z  &kp F  &kp O  &kp U  &kp DEL  &kp BSPC  &kp TAB  &mt LG(C) C  &mt LA(R) R  &mt LS(S) S  &mt LC(T) T  &kp G  &kp M  &mt LC(N) N  &mt LS(E) E  &mt LA(I) I  &mt LG(A) A  &kp SQT  &to_fn 8 8  &kp Q  &kp J  &kp V  &kp D  &kp K  &kp X  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &none  &toggle_on 7  &lt 7 SPACE  &kp ENTER  &kp ENTER  &lt 3 SPACE  &toggle_on 3
+&kp ESC  &kp W  &kp L  &kp Y  &kp P  &kp B  &kp Z  &kp F  &kp O  &kp U  &kp DEL  &kp BSPC  &kp TAB  &mt LG C  &mt LA R  &mt LS S  &mt LC T  &kp G  &kp M  &mt LC N  &mt LS E  &mt LA I  &mt LG A  &kp SQT  &to_fn 8 8  &kp Q  &kp J  &kp V  &kp D  &kp K  &kp X  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &none  &toggle_on 7  &lt 7 SPACE  &kp ENTER  &kp ENTER  &lt 3 SPACE  &toggle_on 3
             >;
         };
 
@@ -317,3 +317,5 @@
         };
     };
 };
+ 
+
