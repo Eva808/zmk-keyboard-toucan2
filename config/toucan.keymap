@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LC(NUMBER_1)>,
+                <&kp LC(LS(NUMBER_1))>,
                 <&to 0>;
 
             label = "TO_ENG";
@@ -34,7 +34,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LC(NUMBER_2)>,
+                <&kp LC(LS(NUMBER_2))>,
                 <&to 1>;
 
             label = "TO_RU";
@@ -44,7 +44,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LC(NUMBER_3)>,
+                <&kp LC(LS(NUMBER_3))>,
                 <&to 2>;
 
             label = "TO_UKR";
