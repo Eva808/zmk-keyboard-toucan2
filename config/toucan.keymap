@@ -124,6 +124,16 @@
     };
 
     behaviors {
+
+        mt: mod_tap {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                flavor = "hold-preferred";
+                tapping-term-ms = <230>;
+                bindings = <&kp>, <&kp>;
+                display-name = "Mod-Tap";
+            };
+
         UKR_I_YI: UKR_I_YI {
             compatible = "zmk,behavior-tap-dance";
             label = "UKR_I_YI";
