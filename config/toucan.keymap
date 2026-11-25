@@ -212,7 +212,7 @@
         };
 
         combo_copy {
-            bindings = <&kp K_COPY>;
+            bindings = <&COPY_>;
             key-positions = <16 15>;
             layers = <0 2 1>;
         };
@@ -224,7 +224,7 @@
         };
 
         combo_cut {
-            bindings = <&kp K_CUT>;
+            bindings = <&CUT_>;
             key-positions = <16 14>;
             layers = <0 1 2>;
         };
@@ -248,7 +248,7 @@
         };
 
         combo_undo {
-            bindings = <&kp K_UNDO>;
+            bindings = <&UNDO_>;
             key-positions = <16 25>;
             layers = <0 1 2>;
         };
