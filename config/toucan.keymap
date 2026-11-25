@@ -287,7 +287,7 @@ ukr {
         sym {
         display-name = "SYM";
             bindings = <
-&trans  &kp LS(POUND)  &kp LS(DQT)  &kp LBKT  &kp RBKT  &kp LS(DLLR)  &kp LS(PRCNT)  &kp HOME  &kp UP  &kp END  &kp SEMI  &trans  &trans  &kp AT  &mt LALT SQT  &mt LSHFT LEFT_PARENTHESIS  &mt LCTRL RIGHT_PARENTHESIS  &kp FSLH  &kp LS(STAR)  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(COLON)  &trans  &none  &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(LBRC)  &kp LS(RBRC)  &kp BSLH  &kp LS(CARET)  &kp LS(AMPS)  &trans  &trans  &trans  &toggle_off 3  &none  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
+&trans  &kp LS(POUND)  &kp LS(DQT)  &kp LBKT  &kp RBKT  &kp LS(DLLR)  &kp LS(PRCNT)  &kp HOME  &kp UP  &kp END  &kp SEMI  &trans  &trans  &kp AT  &mt LALT SQT  &mt LSHFT LEFT_PARENTHESIS  &mt LCTRL RIGHT_PARENTHESIS  &kp FSLH  &kp LS(STAR)  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(COLON)  &trans  &toggle_off 3  &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(LBRC)  &kp LS(RBRC)  &kp BSLH  &kp LS(CARET)  &kp LS(AMPS)  &trans  &trans  &trans  &toggle_off 3  &none  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
             >;
         };
 
@@ -301,21 +301,21 @@ ukr {
         sym_ru {
         display-name = "SYM_RU";
             bindings = <
-&trans  &kp LS(POUND)  &kp LS(DQT)  &kp LBKT  &kp RBKT  &kp LS(DLLR)  &kp LS(PRCNT)  &kp HOME  &kp UP  &kp END  &kp SEMI  &trans  &trans  &kp AT  &mt LALT SQT  &mt LSHFT LEFT_PARENTHESIS  &mt LCTRL RIGHT_PARENTHESIS  &kp FSLH  &kp LS(STAR)  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(COLON)  &trans  &none  &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(LBRC)  &kp LS(RBRC)  &kp BSLH  &kp LS(CARET)  &kp LS(AMPS)  &kp RU_COMMA  &kp RU_DOT  &kp RU_MINUS  &toggle_off 5  &none  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
+&trans  &kp LS(POUND)  &kp LS(DQT)  &kp LBKT  &kp RBKT  &kp LS(DLLR)  &kp LS(PRCNT)  &kp HOME  &kp UP  &kp END  &kp SEMI  &trans  &trans  &kp AT  &mt LALT SQT  &mt LSHFT LEFT_PARENTHESIS  &mt LCTRL RIGHT_PARENTHESIS  &kp FSLH  &kp LS(STAR)  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(COLON)  &trans  &toggle_off 5  &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(LBRC)  &kp LS(RBRC)  &kp BSLH  &kp LS(CARET)  &kp LS(AMPS)  &kp RU_COMMA  &kp RU_DOT  &kp RU_MINUS  &toggle_off 5  &none  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
             >;
         };
 
         sym_uk {
         display-name = "SYM_UK";
             bindings = <
-&trans  &kp LS(POUND)  &kp LS(DQT)  &kp LBKT  &kp RBKT  &kp LS(DLLR)  &kp LS(PRCNT)  &kp HOME  &kp UP  &kp END  &kp SEMI  &trans  &trans  &kp T  &mt LALT SQT  &mt LSHFT LEFT_PARENTHESIS  &mt LCTRL RIGHT_PARENTHESIS  &kp FSLH  &kp LS(STAR)  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(COLON)  &trans  &none  &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(LBRC)  &kp LS(RBRC)  &kp BSLH  &kp LS(CARET)  &kp LS(AMPS)  &kp UK_COMMA  &kp UK_DOT  &kp UK_MINUS  &toggle_off 6  &none  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
+&trans  &kp LS(POUND)  &kp LS(DQT)  &kp LBKT  &kp RBKT  &kp LS(DLLR)  &kp LS(PRCNT)  &kp HOME  &kp UP  &kp END  &kp SEMI  &trans  &trans  &kp T  &mt LALT SQT  &mt LSHFT LEFT_PARENTHESIS  &mt LCTRL RIGHT_PARENTHESIS  &kp FSLH  &kp LS(STAR)  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(COLON)  &trans  &toggle_off 6  &kp LS(EXCL)  &kp LS(QMARK)  &kp LS(LBRC)  &kp LS(RBRC)  &kp BSLH  &kp LS(CARET)  &kp LS(AMPS)  &kp UK_COMMA  &kp UK_DOT  &kp UK_MINUS  &toggle_off 6  &none  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
             >;
         };
 
         num {
         display-name = "NUM";
             bindings = <
-&trans  &none  &kp HOME  &kp UP  &kp END  &none  &kp DOT  &kp N7  &kp N8  &kp N9  &kp EQUAL  &trans  &trans  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &kp COMMA  &mt LCTRL N4  &mt LSHFT NUMBER_5  &mt LALT NUMBER_6  &kp FSLH  &kp MINUS  &toggle_off 8  &none  &kp LBKT  &none  &kp RBKT  &none  &kp N0  &kp N1  &kp N2  &kp N3  &kp STAR  &kp PLUS  &trans  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
+&trans  &none  &kp HOME  &kp UP  &kp END  &none  &kp DOT  &kp N7  &kp N8  &kp N9  &kp EQUAL  &trans  &trans  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &kp COMMA  &mt LCTRL N4  &mt LSHFT NUMBER_5  &mt LALT NUMBER_6  &kp FSLH  &kp MINUS  &toggle_off 7  &none  &kp LBKT  &none  &kp RBKT  &none  &kp N0  &kp N1  &kp N2  &kp N3  &kp STAR  &kp PLUS  &trans  &trans  &trans  &trans  &trans  &kp PRINTSCREEN
             >;
         };
 
