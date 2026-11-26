@@ -139,7 +139,7 @@
             label = "UKR_I_YI";
             #binding-cells = <0>;
             bindings =
-                <&mt LA(UK_UKRAINIAN_I) UK_UKRAINIAN_I>,
+                <&mt UK_UKRAINIAN_I>,
                 <&kp UK_CYRILLIC_YI>;
         };
 
@@ -147,7 +147,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "UKR_H_G";
             #binding-cells = <0>;
-            bindings = <&kp LS(UK_CYRILLIC_GHE)>, <&kp UK_CYRILLIC_GHE_UPTURN>;
+            bindings = <&kp UK_CYRILLIC_GHE>, <&kp UK_CYRILLIC_GHE_UPTURN>;
         };
 
         RUS_SOFT_HARD: RUS_SOFT_HARD {
