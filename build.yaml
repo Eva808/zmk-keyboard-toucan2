@@ -32,4 +32,3 @@ include:
 
   - board: seeeduino_xiao_ble
     shield: toucan_dongle
-      cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
