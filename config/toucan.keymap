@@ -139,7 +139,7 @@
             label = "UKR_I_YI";
             #binding-cells = <0>;
             bindings =
-                <&mt UK_UKRAINIAN_I>,
+                <&mt LA(UK_UKRAINIAN_I) UK_UKRAINIAN_I>,
                 <&kp UK_CYRILLIC_YI>;
         };
 
