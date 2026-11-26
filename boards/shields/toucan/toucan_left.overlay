@@ -51,6 +51,6 @@ nice_view_spi: &spi0 {
     status = "okay";
 };
 
-&trackpad_split {
-    status = "disabled";
-};
+//&trackpad_split {
+ //   status = "disabled";
+//};
