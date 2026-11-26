@@ -21,7 +21,7 @@ static void draw_ble_connected(lv_obj_t *canvas) {
     init_label_dsc(&label_dsc, LVGL_FOREGROUND, &quinquefive_8, LV_TEXT_ALIGN_RIGHT);
     lv_canvas_draw_text(canvas, -18, 143, SCREEN_WIDTH-8, &label_dsc, "BLE");
 }
-/*
+
 void draw_output_status(lv_obj_t *canvas, const struct status_state *state) {
     switch (state->selected_endpoint.transport) {
         case ZMK_TRANSPORT_USB:
@@ -34,10 +34,10 @@ void draw_output_status(lv_obj_t *canvas, const struct status_state *state) {
             draw_ble_disconnected(canvas);
             break;
     }
-}*/
+}
 
 
-void draw_output_status(lv_obj_t *canvas, const struct status_state *state) {
+/*void draw_output_status(lv_obj_t *canvas, const struct status_state *state) {
 #if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
     switch (state->selected_endpoint.transport) {
         case ZMK_TRANSPORT_USB:
@@ -58,3 +58,4 @@ void draw_output_status(lv_obj_t *canvas, const struct status_state *state) {
     }
 #endif
 }
+*/
