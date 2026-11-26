@@ -5,66 +5,27 @@ correction: changed right modifiers to left, compiled
 
 
 
+cmakelists.txt 
 
-deconfig 
-
-if SHIELD_TOUCAN_DONGLE
-
-# Max 16 characters in keyboard name
-config ZMK_KEYBOARD_NAME
-    default "toucan"
-
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-config ZMK_SPLIT
-    default y
-
-# Set this to the number of peripherals your dongle will have.
-# For a unibody, this would be 1. If you have left and right halves, set it to 2, etc.
-config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
-    default 2
-
-# Set this to ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS + your desired number of BT profiles (default is 5)
-config BT_MAX_CONN
-    default 5
-
-# Set this to the same number as BT_MAX_CONN
-config BT_MAX_PAIRED
-    default 5
-
-endif
+  if(CONFIG_TOUCAN_STATUS_SCREEN EQUAL 2)
+    zephyr_library_sources(widgets/battery_arc.c)
+    zephyr_library_sources(widgets/battery_arc_peripheral.c)
+    zephyr_library_sources(widgets/output_arc.c)
+    zephyr_library_sources(widgets/chart.c)
+  else()
+    zephyr_library_sources(widgets/battery.c)
+    zephyr_library_sources(widgets/battery_peripheral.c)
+    zephyr_library_sources(widgets/output.c)
+  endif()  
 
 
+  to 
 
 
-if SHIELD_TOUCAN_LEFT
-
-config ZMK_KEYBOARD_NAME
-    default "Toucan"
-
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
-    default y
-
-config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
-    default y
-
-endif
-
-
-
-
-
-shield
-
-config SHIELD_TOUCAN_DONGLE
-    def_bool $(shields_list_contains,toucan_dongle)
-
-
-build 
-
-  - board: seeeduino_xiao_ble
-    shield: toucan_dongle
+  if(CONFIG_TOUCAN_STATUS_SCREEN EQUAL 2)
+    zephyr_library_sources(widgets/battery_arc.c)
+    zephyr_library_sources(widgets/battery_arc_peripheral.c)
+else()
+    zephyr_library_sources(widgets/battery.c)
+    zephyr_library_sources(widgets/battery_peripheral.c)
+endif()
