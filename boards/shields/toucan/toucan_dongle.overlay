@@ -82,6 +82,8 @@
             ;
     };
 
+};
+
 &trackpad_listener {
     status = "okay";
 };
@@ -91,4 +93,3 @@
 };
 
 
-};
