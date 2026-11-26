@@ -35,27 +35,3 @@ void draw_output_status(lv_obj_t *canvas, const struct status_state *state) {
             break;
     }
 }
-
-
-/*void draw_output_status(lv_obj_t *canvas, const struct status_state *state) {
-#if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
-    switch (state->selected_endpoint.transport) {
-        case ZMK_TRANSPORT_USB:
-            draw_usb_connected(canvas);
-            break;
-        case ZMK_TRANSPORT_BLE:
-            draw_ble_connected(canvas);
-            break;
-        default:
-            draw_ble_disconnected(canvas);
-            break;
-    }
-#else
-    if (state->connected) {
-        draw_ble_connected(canvas);
-    } else {
-        draw_ble_disconnected(canvas);
-    }
-#endif
-}
-*/
