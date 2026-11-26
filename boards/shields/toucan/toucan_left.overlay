@@ -50,7 +50,3 @@ nice_view_spi: &spi0 {
 &zip_zoom_mapper {
     status = "okay";
 };
-
-//&trackpad_split {
- //   status = "disabled";
-//};
